@@ -121,6 +121,9 @@
     <Content Include="ch5-9.aspx" />
     <Content Include="ch6-2.aspx" />
     <Content Include="ch6-3.aspx" />
+    <Content Include="ch6-4.aspx" />
+    <Content Include="ch6-5.aspx" />
+    <Content Include="ch6-6.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -282,6 +285,27 @@
     </Compile>
     <Compile Include="ch6-3.aspx.designer.cs">
       <DependentUpon>ch6-3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch6-4.aspx.cs">
+      <DependentUpon>ch6-4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch6-4.aspx.designer.cs">
+      <DependentUpon>ch6-4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch6-5.aspx.cs">
+      <DependentUpon>ch6-5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch6-5.aspx.designer.cs">
+      <DependentUpon>ch6-5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch6-6.aspx.cs">
+      <DependentUpon>ch6-6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch6-6.aspx.designer.cs">
+      <DependentUpon>ch6-6.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
