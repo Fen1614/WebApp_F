@@ -119,6 +119,8 @@
     <Content Include="ch5-8.aspx" />
     <Content Include="ch5-8.xml" />
     <Content Include="ch5-9.aspx" />
+    <Content Include="ch6-2.aspx" />
+    <Content Include="ch6-3.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -266,6 +268,20 @@
     </Compile>
     <Compile Include="ch5-9.aspx.designer.cs">
       <DependentUpon>ch5-9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch6-2.aspx.cs">
+      <DependentUpon>ch6-2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch6-2.aspx.designer.cs">
+      <DependentUpon>ch6-2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch6-3.aspx.cs">
+      <DependentUpon>ch6-3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch6-3.aspx.designer.cs">
+      <DependentUpon>ch6-3.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
