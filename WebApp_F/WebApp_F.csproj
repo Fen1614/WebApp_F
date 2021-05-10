@@ -133,6 +133,11 @@
     <Content Include="ch7-2_1_1.aspx" />
     <Content Include="ch7-2_1_2.aspx" />
     <Content Include="ch7-2_2.aspx" />
+    <Content Include="ch7-3_1.aspx" />
+    <Content Include="ch7-3_2.aspx" />
+    <Content Include="ch7-3_3.aspx" />
+    <Content Include="ch7-4_1.aspx" />
+    <Content Include="ch7-4_2.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -378,6 +383,41 @@
     </Compile>
     <Compile Include="ch7-2_2.aspx.designer.cs">
       <DependentUpon>ch7-2_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch7-3_1.aspx.cs">
+      <DependentUpon>ch7-3_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch7-3_1.aspx.designer.cs">
+      <DependentUpon>ch7-3_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch7-3_2.aspx.cs">
+      <DependentUpon>ch7-3_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch7-3_2.aspx.designer.cs">
+      <DependentUpon>ch7-3_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch7-3_3.aspx.cs">
+      <DependentUpon>ch7-3_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch7-3_3.aspx.designer.cs">
+      <DependentUpon>ch7-3_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch7-4_1.aspx.cs">
+      <DependentUpon>ch7-4_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch7-4_1.aspx.designer.cs">
+      <DependentUpon>ch7-4_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch7-4_2.aspx.cs">
+      <DependentUpon>ch7-4_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch7-4_2.aspx.designer.cs">
+      <DependentUpon>ch7-4_2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
