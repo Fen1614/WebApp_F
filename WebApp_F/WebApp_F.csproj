@@ -124,6 +124,15 @@
     <Content Include="ch6-4.aspx" />
     <Content Include="ch6-5.aspx" />
     <Content Include="ch6-6.aspx" />
+    <Content Include="ch7-1_0_1.aspx" />
+    <Content Include="ch7-1_0_2.aspx" />
+    <Content Include="ch7-1_1.aspx" />
+    <Content Include="ch7-1_2.aspx" />
+    <Content Include="ch7-1_3_2.aspx" />
+    <Content Include="ch7-1_3_1.aspx" />
+    <Content Include="ch7-2_1_1.aspx" />
+    <Content Include="ch7-2_1_2.aspx" />
+    <Content Include="ch7-2_2.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -306,6 +315,69 @@
     </Compile>
     <Compile Include="ch6-6.aspx.designer.cs">
       <DependentUpon>ch6-6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch7-1_0_1.aspx.cs">
+      <DependentUpon>ch7-1_0_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch7-1_0_1.aspx.designer.cs">
+      <DependentUpon>ch7-1_0_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch7-1_0_2.aspx.cs">
+      <DependentUpon>ch7-1_0_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch7-1_0_2.aspx.designer.cs">
+      <DependentUpon>ch7-1_0_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch7-1_1.aspx.cs">
+      <DependentUpon>ch7-1_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch7-1_1.aspx.designer.cs">
+      <DependentUpon>ch7-1_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch7-1_2.aspx.cs">
+      <DependentUpon>ch7-1_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch7-1_2.aspx.designer.cs">
+      <DependentUpon>ch7-1_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch7-1_3_2.aspx.cs">
+      <DependentUpon>ch7-1_3_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch7-1_3_2.aspx.designer.cs">
+      <DependentUpon>ch7-1_3_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch7-1_3_1.aspx.cs">
+      <DependentUpon>ch7-1_3_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch7-1_3_1.aspx.designer.cs">
+      <DependentUpon>ch7-1_3_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch7-2_1_1.aspx.cs">
+      <DependentUpon>ch7-2_1_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch7-2_1_1.aspx.designer.cs">
+      <DependentUpon>ch7-2_1_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch7-2_1_2.aspx.cs">
+      <DependentUpon>ch7-2_1_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch7-2_1_2.aspx.designer.cs">
+      <DependentUpon>ch7-2_1_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch7-2_2.aspx.cs">
+      <DependentUpon>ch7-2_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch7-2_2.aspx.designer.cs">
+      <DependentUpon>ch7-2_2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
