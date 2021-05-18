@@ -20,7 +20,7 @@ namespace WebApp_F {
 
                 SqlDataAdapter o_A = new SqlDataAdapter( "Select * from Users", o_Conn);
                 DataSet o_D = new DataSet();
-                o_A.Fill(o_D);
+                o_A.Fill(o_D, "ds_Res");
                 gv_DataShow.DataSource = o_D;
                 gv_DataShow.DataBind();              
                 o_Conn.Close();
