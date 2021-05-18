@@ -17,7 +17,7 @@ namespace WebApp_F {
 
             try {
                 SqlConnection o_Conn = new SqlConnection(s_ConnS);
-
+                o_Conn.Open();
                 SqlDataAdapter o_A = new SqlDataAdapter( "Select * from Users", o_Conn);
                 DataSet o_D = new DataSet();
                 o_A.Fill(o_D, "ds_Res");

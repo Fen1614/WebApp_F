@@ -22,7 +22,7 @@ namespace WebApp_F {
                 SqlDataReader o_R =  o_Com.ExecuteReader();
                 for (; o_R.Read(); ) {
                     for (int i_Col=0; i_Col< o_R.FieldCount; i_Col++) {
-                        Response.Write("&nbsp;&nbsp;"+ o_R[i_Col].ToString());
+                        Response.Write("&nbsp;&nbsp;"+ o_R.GetValue(i_Col).ToString());
                     }
                     Response.Write("<br />");
                 }
