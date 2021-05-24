@@ -25,8 +25,9 @@
                     <asp:Parameter Name="Id" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:GridView ID="gv_Show" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="Id" DataSourceID="sds_Users" PageSize="2">
+            <asp:GridView ID="gv_Show" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="Id" DataSourceID="sds_Users" PageSize="2" OnRowCommand="gv_Show_RowCommand" OnSelectedIndexChanged="gv_Show_SelectedIndexChanged">
                 <Columns>
+                    <asp:CommandField ShowSelectButton="True" ButtonType="Button" />
                     <asp:TemplateField ShowHeader="False">
                         <EditItemTemplate>
                             <asp:Button ID="Button1" runat="server" CausesValidation="True" CommandName="Update" Text="更新" />
@@ -53,6 +54,8 @@
                     </asp:TemplateField>
                     <asp:BoundField DataField="Birthday" HeaderText="Birthday" SortExpression="Birthday" />
                     
+                    <asp:ButtonField ButtonType="Button" CommandName="Cal" Text="運算" />
+                    
                 </Columns>
                 <FooterStyle BackColor="White" ForeColor="#000066" />
                 <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
@@ -66,11 +69,13 @@
                 <SortedDescendingHeaderStyle BackColor="#00547E" />
             </asp:GridView>
             <br />
+
             <asp:DropDownList ID="ddl_Sort" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddl_Sort_SelectedIndexChanged">
                 <asp:ListItem>Id</asp:ListItem>
                 <asp:ListItem>Name</asp:ListItem>
                 <asp:ListItem>Birthday</asp:ListItem>
             </asp:DropDownList>
+            <asp:Label ID="lb_Msg" runat="server" Text=""></asp:Label>
         </div>
     </form>
 </body>

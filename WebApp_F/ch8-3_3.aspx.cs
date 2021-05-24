@@ -40,6 +40,22 @@ namespace WebApp_F {
                 gv_DataShow.DataSource = o_D;
                 gv_DataShow.DataBind();
                 o_Conn.Close();
+
+
+                o_Conn.Open();
+                o_Cmd = new SqlCommand("SELECT * FROM Users where Name=@Name ", o_Conn);
+                o_Cmd.Parameters.Add("@Name", SqlDbType.NVarChar, 50);
+                o_Cmd.Parameters["@Name"].Value = "狗狗旭";
+          
+                o_A.SelectCommand = o_Cmd;
+                DataSet o_D2 = new DataSet();
+                o_A.Fill(o_D2, "ds_Res");
+                gv_DataShow2.DataSource = o_D2;
+                gv_DataShow2.DataBind();
+                o_Conn.Close();
+
+
+
             }
             catch (Exception o_Exc){
                 Response.Write(o_Exc.ToString());

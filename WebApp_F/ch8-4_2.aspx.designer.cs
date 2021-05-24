@@ -11,7 +11,7 @@ namespace WebApp_F
 {
 
 
-    public partial class ch8_3_3
+    public partial class ch8_4_2
     {
 
         /// <summary>
@@ -22,23 +22,5 @@ namespace WebApp_F
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
-        /// gv_DataShow 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gv_DataShow;
-
-        /// <summary>
-        /// gv_DataShow2 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gv_DataShow2;
     }
 }

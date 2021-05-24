@@ -7,7 +7,9 @@ namespace WebApp_F {
     public partial class ch8_3_4 : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
             try{                              
-                SqlConnection o_Conn = new SqlConnection(ConfigurationManager.ConnectionStrings["MyCon"].ConnectionString);             
+                SqlConnection o_Conn = new SqlConnection(
+                    ConfigurationManager.ConnectionStrings["MyCon"].ConnectionString
+                    );             
                 SqlDataAdapter o_A = new SqlDataAdapter();           
                 o_Conn.Open();
                 SqlCommand o_Cmd = new SqlCommand("SELECT * FROM Users ", o_Conn);
