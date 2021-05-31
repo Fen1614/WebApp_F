@@ -106,6 +106,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="ch10-1.aspx" />
+    <Content Include="ch10-2.aspx" />
+    <Content Include="ch10-4.aspx" />
+    <Content Include="ch10-5.aspx" />
     <Content Include="ch3-1_1.aspx" />
     <Content Include="ch3-5_4.aspx" />
     <Content Include="ch3-6_3.aspx" />
@@ -194,6 +198,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="ShowTime.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="Test.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -209,6 +214,34 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="ch10-1.aspx.cs">
+      <DependentUpon>ch10-1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch10-1.aspx.designer.cs">
+      <DependentUpon>ch10-1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch10-2.aspx.cs">
+      <DependentUpon>ch10-2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch10-2.aspx.designer.cs">
+      <DependentUpon>ch10-2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch10-4.aspx.cs">
+      <DependentUpon>ch10-4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch10-4.aspx.designer.cs">
+      <DependentUpon>ch10-4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch10-5.aspx.cs">
+      <DependentUpon>ch10-5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch10-5.aspx.designer.cs">
+      <DependentUpon>ch10-5.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ch3-1_1.aspx.cs">
       <DependentUpon>ch3-1_1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -513,6 +546,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

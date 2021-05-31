@@ -11,7 +11,7 @@ namespace WebApp_F
 {
 
 
-    public partial class ch8_3_1
+    public partial class Test
     {
 
         /// <summary>
@@ -24,21 +24,39 @@ namespace WebApp_F
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// tb_Name 控制項。
+        /// sds_Users 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_Name;
+        protected global::System.Web.UI.WebControls.SqlDataSource sds_Users;
 
         /// <summary>
-        /// btn_Submit 控制項。
+        /// gv_Show 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_Submit;
+        protected global::System.Web.UI.WebControls.GridView gv_Show;
+
+        /// <summary>
+        /// ddl_Sort 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_Sort;
+
+        /// <summary>
+        /// lb_Msg 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lb_Msg;
     }
 }
