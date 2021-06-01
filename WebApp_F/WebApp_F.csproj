@@ -50,6 +50,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -110,6 +112,8 @@
     <Content Include="ch10-2.aspx" />
     <Content Include="ch10-4.aspx" />
     <Content Include="ch10-5.aspx" />
+    <Content Include="ch11-3_1.asmx" />
+    <Content Include="ch11-3_2.aspx" />
     <Content Include="ch3-1_1.aspx" />
     <Content Include="ch3-5_4.aspx" />
     <Content Include="ch3-6_3.aspx" />
@@ -149,6 +153,13 @@
     <Content Include="ch8-3_4.aspx" />
     <Content Include="ch8-4_1.aspx" />
     <Content Include="ch8-4_2.aspx" />
+    <None Include="Connected Services\ServiceReference1\ch11-3_1.disco" />
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -167,6 +178,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Connected Services\ServiceReference1\ch11-3_1.wsdl" />
+    <Content Include="Connected Services\ServiceReference1\WebApp_F.ServiceReference1.HelloWorldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -241,6 +256,17 @@
     </Compile>
     <Compile Include="ch10-5.aspx.designer.cs">
       <DependentUpon>ch10-5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ch11-3_1.asmx.cs">
+      <DependentUpon>ch11-3_1.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ch11-3_2.aspx.cs">
+      <DependentUpon>ch11-3_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ch11-3_2.aspx.designer.cs">
+      <DependentUpon>ch11-3_2.aspx</DependentUpon>
     </Compile>
     <Compile Include="ch3-1_1.aspx.cs">
       <DependentUpon>ch3-1_1.aspx</DependentUpon>
@@ -508,6 +534,11 @@
     <Compile Include="ch8-4_2.aspx.designer.cs">
       <DependentUpon>ch8-4_2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -575,6 +606,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
