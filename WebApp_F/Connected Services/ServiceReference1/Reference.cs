@@ -21,6 +21,12 @@ namespace WebApp_F.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HelloWorld", ReplyAction="*")]
         System.Threading.Tasks.Task<WebApp_F.ServiceReference1.HelloWorldResponse> HelloWorldAsync(WebApp_F.ServiceReference1.HelloWorldRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/fn_GetSum", ReplyAction="*")]
+        int fn_GetSum(int i_F, int i_S);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/fn_GetSum", ReplyAction="*")]
+        System.Threading.Tasks.Task<int> fn_GetSumAsync(int i_F, int i_S);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -132,6 +138,14 @@ namespace WebApp_F.ServiceReference1 {
             WebApp_F.ServiceReference1.HelloWorldRequest inValue = new WebApp_F.ServiceReference1.HelloWorldRequest();
             inValue.Body = new WebApp_F.ServiceReference1.HelloWorldRequestBody();
             return ((WebApp_F.ServiceReference1.ch11_3_1Soap)(this)).HelloWorldAsync(inValue);
+        }
+        
+        public int fn_GetSum(int i_F, int i_S) {
+            return base.Channel.fn_GetSum(i_F, i_S);
+        }
+        
+        public System.Threading.Tasks.Task<int> fn_GetSumAsync(int i_F, int i_S) {
+            return base.Channel.fn_GetSumAsync(i_F, i_S);
         }
     }
 }

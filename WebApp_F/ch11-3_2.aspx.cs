@@ -12,6 +12,8 @@ namespace WebApp_F {
                 new ServiceReference1.ch11_3_1SoapClient();
             
             Response.Write(o_WS.HelloWorld());
+            Response.Write("<br />");
+            Response.Write(o_WS.fn_GetSum(4, 8));
         }   
     }
 }

@@ -19,5 +19,10 @@ namespace WebApp_F {
         public string HelloWorld() {
             return "Hello World";
         }
+
+        [WebMethod]
+        public int fn_GetSum(int i_F, int i_S) {
+            return i_F +  i_S;
+        }
     }
 }

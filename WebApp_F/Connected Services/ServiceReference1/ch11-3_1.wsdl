@@ -12,6 +12,21 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="fn_GetSum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="i_F" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="i_S" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_GetSumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fn_GetSumResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="HelloWorldSoapIn">
@@ -20,10 +35,20 @@
   <wsdl:message name="HelloWorldSoapOut">
     <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
   </wsdl:message>
+  <wsdl:message name="fn_GetSumSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_GetSum" />
+  </wsdl:message>
+  <wsdl:message name="fn_GetSumSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_GetSumResponse" />
+  </wsdl:message>
   <wsdl:portType name="ch11_3_1Soap">
     <wsdl:operation name="HelloWorld">
       <wsdl:input message="tns:HelloWorldSoapIn" />
       <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_GetSum">
+      <wsdl:input message="tns:fn_GetSumSoapIn" />
+      <wsdl:output message="tns:fn_GetSumSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="ch11_3_1Soap" type="tns:ch11_3_1Soap">
@@ -37,11 +62,29 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="fn_GetSum">
+      <soap:operation soapAction="http://tempuri.org/fn_GetSum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="ch11_3_1Soap12" type="tns:ch11_3_1Soap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="HelloWorld">
       <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_GetSum">
+      <soap12:operation soapAction="http://tempuri.org/fn_GetSum" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
